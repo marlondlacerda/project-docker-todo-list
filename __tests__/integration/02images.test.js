@@ -2,7 +2,7 @@ const { readCommand, resultOutput } = require('../util');
 const { requirements } = require('../../.trybe/requirements.json');
 const { resultCriteria } = require('../constants');
 
-describe(requirements[5].description, () => {
+describe.skip(requirements[5].description, () => {
   it("O avaliador deve executar o comando no arquivo 'command06.dc'", async () => {
     const { stdout: result } = await readCommand(6);
     expect(result).not.toBeNull();

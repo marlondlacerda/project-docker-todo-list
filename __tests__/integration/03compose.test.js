@@ -2,7 +2,7 @@ const { readCommand } = require('../util');
 const { evalId, one, composeTries } = require('../constants');
 const { requirements } = require('../../.trybe/requirements.json');
 
-describe(requirements[11].description, () => {
+describe.only(requirements[11].description, () => {
   it("O avaliador deve executar o comando no arquivo 'command09.dc'", async () => {
     const { stdout: result } = await readCommand(9);
     expect(result).not.toBeNull();
